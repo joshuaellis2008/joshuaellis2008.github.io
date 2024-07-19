@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-image: url("../Images/b22b5f8b9e1dbe0df173e9e0a55dd6d0.jpg");
+
+color: red;
+
+
+}
+
+h1 { 
+  text-align: center;
+  font-size: 60px;
+  color: #bd2424;
+}
+
+footer { 
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(197, 7, 7);
+  color: white;
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #bd2424;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #910707;
+}
+
+.active {
+  background-color: #450599;
+}
+
+
+.one {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.two {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+img {
+  width: 100%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+}
+
+.column {
+  width: 100%;
+  padding: 5px;
+}
+
+@media  screen and (min-width: 800px) {
+  .column {
+    float: left;
+    width: 33%;
+    padding: 5px;
+  }
+}
+
+input[type=text] {
+  width: 110px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(138, 3, 3);
+  border-radius: 8px;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+input[type=text] {
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 600px;
+}
